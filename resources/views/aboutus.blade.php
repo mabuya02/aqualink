@@ -16,13 +16,13 @@
 <nav class="flex flex-col md:flex-row justify-between px-6 md:px-10 py-6 w-full items-center">
     <div class="flex flex-row items-center justify-between w-full md:w-7/12">
         <div class="brand-logo mx-4 md:mx-0">
-            <img src="{{asset('public\images\logo.png')}}" alt="Your Logo" class="w-16 h-16">
+            <img src="C:\Users\wangu\Downloads\logo-package (1)\svg\logo-no-background.svg" alt="Your Logo" class="w-16 h-16">
         </div>
         <div class="flex flex-row items-center space-x-4 md:space-x-8">
-            <span class="text-lg font-bold px-2">
+            <span class="text-lg font-bold  text-gray-600 px-2">
                 <a href='/'>Home</a>
             </span>
-            <span class="text-lg font-bold text-gray-600 px-2">
+            <span class="text-lg font-bold px-2">
                 <a href='aboutus'>About Us</a>
             </span>
             <span class="text-lg font-bold text-gray-600 px-2">
@@ -45,88 +45,26 @@
     @endif
 </nav>
 
+
+<figure class="max-w-lg">
+  <img class="h-auto max-w-full rounded-lg" src='\public\images\logo.png' alt="image description">
+  <figcaption class="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">Image caption</figcaption>
+</figure>
+
 <section class="bg-gray dark:bg-white-900">
     <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
         <div class="mr-auto place-self-center lg:col-span-7">
-            <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-gray">Welcome to AquaLink,</h1>
+            <h3 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-gray">AquaLink ?</h1>
             <p class="max-w-2xl mb-6 font-light text-white-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-600">
-            your gateway to a world where water isn't just a resource—it's a living, breathing ecosystem that deserves our understanding and protection. At AquaLink, we believe in the power of awareness to create positive change, and our platform is designed to keep you connected to the pulse of our water bodies.</p>
-            
-           
-        </div>
-        <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
-            <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png" alt="mockup">
-        </div>                
-    </div>
-</section>
-
-<section class="bg-white dark:bg-blue-950">
-  <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-      <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
-          <div>
-              <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-              </div>
-              <h3 class="mb-2 text-xl font-bold dark:text-white">Temperature</h3>
-              <p class="text-gray-500 dark:text-gray-400">emperature is a critical factor in determining the health of water bodies. AquaLink provides real-time information on water temperature, helping users understand the environmental conditions that aquatic species are exposed to. Fluctuations in temperature can impact the metabolic rates of aquatic organisms and influence the overall ecosystem dynamics. AquaLink's temperature monitoring feature aids in tracking these changes, offering valuable insights into the well-being of the aquatic environment.</p>
-          </div>
-          <div>
-              <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-              </div>
-              <h3 class="mb-2 text-xl font-bold dark:text-white">pH</h3>
-              <p class="text-gray-500 dark:text-gray-400">The pH level of water is a measure of its acidity or alkalinity. Aquatic organisms are highly sensitive to changes in pH, and deviations from the optimal range can have detrimental effects on their health. AquaLink keeps users informed about variations in water pH, alerting them to potential threats to aquatic life. By monitoring pH levels, AquaLink contributes to the conservation of endangered species and helps maintain the delicate balance of aquatic ecosystems.</p>
-          </div>
-          <div>
-              <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-               
-              </div>
-              <h3 class="mb-2 text-xl font-bold dark:text-white">Purity</h3>
-              <p class="text-gray-500 dark:text-gray-400 ">Water purity is a fundamental aspect of AquaLink's monitoring system. The platform notifies users about any changes in water quality, including the presence of pollutants or contaminants. This proactive approach enables individuals and communities living near water bodies to take necessary actions to preserve water purity. AquaLink serves as a guardian for the health of water sources, fostering awareness and encouraging responsible practices to ensure the sustainability of aquatic environments.</p>
-          </div>
-
-          <a href="aboutus" class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
-                Know More
-                <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-            </a>
-      </div>
-  </div>
-</section>
-
-
-<section class="bg-gray dark:bg-white-900">
-    <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
-        <div class="font-light text-white-500 sm:text-lg dark:text-white-400">
-            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-white-900 dark:text-gray">Become part of our community</h2>
-            <p class="mb-4">Immerse yourself in the liquid world with AquaLink's intuitive notifications, providing you with crucial insights into the delicate balance of our water ecosystems. From the mesmerizing depths of underwater life to the intricacies of water purity, AquaLink is your guide to understanding, appreciating, and preserving the wonders that flow beneath the surface.</p>
-            <p>Join us in the journey towards water wisdom. AquaLink: Connecting communities, protecting water, and fostering a future where every drop contributes to the vitality of our planet. Together, let's make waves of change!</p>
+            AquaLink is a dynamic online platform that serves as a vital hub for water enthusiasts, environmentalists, and concerned citizens alike. It goes beyond being just a website; it's a comprehensive resource designed to keep individuals informed about the health and well-being of water bodies. AquaLink acts as a beacon of awareness, notifying users about critical factors such as endangered species, fluctuations in water pH levels, and overall water purity.
             <br>
-            <a href="#" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-white-200 focus:ring-4 focus:ring-gray-100 dark:text-gray dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
-                Sign Up
-            </a> 
+            At its core, AquaLink is a bridge between communities and the aquatic environments they hold dear. By delivering real-time updates and notifications, AquaLink empowers users to stay connected with the ever-changing dynamics of aquatic ecosystems. Whether you're a nature lover, educator, or someone deeply passionate about environmental conservation, AquaLink provides the tools and insights needed to make informed decisions.
+
+            More than just a repository of data, AquaLink strives to instill a profound connection with the liquid ecosystems that crisscross our planet. It's a call to action, urging individuals to play an active role in the preservation and protection of water resources. AquaLink envisions a future where every drop matters, and every informed action creates a ripple effect for a healthier, more sustainable world. Dive into AquaLink and discover the transformative power of water wisdom.</p>
         </div>
-        <div class="grid grid-cols-2 gap-4 mt-8">
-            <img class="w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-2.png" alt="office content 1">
-            <img class="mt-4 w-full lg:mt-10 rounded-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-1.png" alt="office content 2">
-        </div>
+               
     </div>
 </section>
-
-
-<footer class="bg-gray rounded-lg shadow m-4 dark:bg-white-800">
-    <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-      <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="#" class="hover:underline">AquaLink™</a>. All Rights Reserved.
-    </span>
-    <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
-        <li>
-            <a href="aboutus" class="mr-4 hover:underline md:mr-6 ">About Us</a>
-        </li>
-        <li>
-            <a href="contact" class="mr-4 hover:underline md:mr-6">Contact Us</a>
-        </li>
-    </ul>
-    </div>
-</footer>
-
-
 
 
 </body>

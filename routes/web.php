@@ -20,6 +20,13 @@ use App\Http\Controllers\QuizController;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('aboutus', function () {
+    return view('aboutus');
+});
+Route::get('contact', function () {
+    return view('contact');
+});
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');
