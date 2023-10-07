@@ -75,12 +75,23 @@
         button[type="submit"]:hover {
             background-color: #0056b3;
         }
+
+        .correct-answer {
+            color: green;
+            font-weight: bold;
+        }
+
+        .wrong-answer {
+            color: red;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
     <h1>Quiz Questions</h1>
 
-    <form action="{{ route('quiz.index') }}" method="post">
+
+    <form action="{{ route('quiz.submit') }}" method="post">
         @csrf
         @foreach ($questions as $key => $question)
             <div class="question">
@@ -105,6 +116,11 @@
                         <span class="choices">D</span> {{ $question['D'] }}
                     </label>
                 </div>
+                @if(isset($results[$key]) && $results[$key]['correct'])
+                    <p class="correct-answer">Correct</p>
+                @elseif(isset($results[$key]) && !$results[$key]['correct'])
+                    <p class="wrong-answer">Wrong. Correct Answer: {{ $question['Answer'] }}</p>
+                @endif
             </div>
         @endforeach
 

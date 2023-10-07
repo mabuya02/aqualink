@@ -63,18 +63,24 @@ class QuizController extends Controller
         }
 
         public function submit(Request $request)
-    {
-        $answers = $request->input('answers');
-        $results = [];
-
-        foreach ($answers as $key => $answer) {
-            $correct = ($answer === $this->questions[$key]['Answer']);
-            $results[] = ['correct' => $correct];
-        }
+        {
+            $answers = $request->input('answers');
+            $results = [];
         
-
-        return view('quiz', ['questions' => $this->questions]);
-    }
+            // Check if $answers is not null and is an array
+            if (is_array($answers)) {
+                foreach ($answers as $key => $answer) {
+                    $correct = ($answer === $this->questions[$key]['Answer']);
+                    $results[] = ['correct' => $correct];
+                }
+            } else {
+                // Handle the case where $answers is null or not an array
+                // For example, you can set a default response or redirect back with a message
+                return redirect()->back()->with('error', 'Answers were not provided or are invalid.');
+            }
+        
+            return view('quiz', ['questions' => $this->questions, 'results' => $results]);
+        }
     //
 }
 
