@@ -19,13 +19,13 @@
             <img src="C:\Users\wangu\Downloads\logo-package (1)\svg\logo-no-background.svg" alt="Your Logo" class="w-16 h-16">
         </div>
         <div class="flex flex-row items-center space-x-4 md:space-x-8">
-            <span class="text-lg font-bold px-2">
+            <span class="text-lg font-bold  text-gray-600 px-2">
                 <a href='/'>Home</a>
             </span>
             <span class="text-lg font-bold text-gray-600 px-2">
                 <a href='aboutus'>About Us</a>
             </span>
-            <span class="text-lg font-bold text-gray-600 px-2">
+            <span class="text-lg font-bold px-2">
                 <a href='contact'>Contact Us</a>
             </span>
         </div>
@@ -44,32 +44,6 @@
         </div>
     @endif
 </nav>
-
-<div class="flex flex-col md:flex-row mx-6 md:mx-20 lg:mx-36 my-6 md:my-10 gap-6 md:gap-10">
-    <div class="flex flex-col w-full md:w-1/2 justify-around">
-        <span class="text-gray-500 font-medium mt-1 text-base md:text-lg text-center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        </span>
-        <span class="md:text-4xl lg:text-7xl my-1 font-serif text-center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        </span>
-        <div class="flex flex-col md:flex-row items-center w-full gap-5 md:gap-10 justify-center">
-            <div class="bg-black px-4 py-3 text-white rounded-full md:w-1/2 lg:w-1/3 text-center mb-4 md:mb-0">
-                <span class="md:text-lg lg:text-xl font-bold">
-                    Try for Free
-                </span>
-            </div>
-            <div class="border-2 border-black rounded-xl px-4 py-3 md:w-1/2 lg:w-1/3 text-center rounded-full">
-                <span class="md:text-lg lg:text-xl font-bold">
-                    See how it works
-                </span>
-            </div>
-        </div>
-    </div>
-    <div class="w-full md:w-1/2 flex justify-center items-center mt-4 md:mt-0">
-        <img src="./beach.jpg" alt="" class="w-full rounded-xl">
-    </div>
-</div>
 
 </body>
 </html>
