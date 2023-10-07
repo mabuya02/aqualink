@@ -16,7 +16,7 @@
 <nav class="flex flex-col md:flex-row justify-between px-6 md:px-10 py-6 w-full items-center">
     <div class="flex flex-row items-center justify-between w-full md:w-7/12">
         <div class="brand-logo mx-4 md:mx-0">
-            <img src="C:\Users\wangu\Downloads\logo-package (1)\svg\logo-no-background.svg" alt="Your Logo" class="w-16 h-16">
+        <img src="{{asset('images/logo.png')}}" alt="Your Logo" class="w-16 h-16">
         </div>
         <div class="flex flex-row items-center space-x-4 md:space-x-8">
             <span class="text-lg font-bold  text-gray-600 px-2">
@@ -44,7 +44,7 @@
         </div>
     @endif
 </nav>
-<section class="bg-gray dark:bg-white-900">
+<!-- <section class="bg-gray dark:bg-white-900">
   <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
       <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-white-900 dark:text-gray">Contact Us</h2>
       <p class="mb-8 lg:mb-16 font-light text-center text-gray-600 dark:text-gray-500 sm:text-xl">Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know.</p>
@@ -64,7 +64,53 @@
           <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-gray-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
       </form>
   </div>
-</section>
+</section> -->
+<div class="min-h-screen bg-white-800 py-6 flex flex-col justify-center sm:py-12">
+    <div class="relative py-3 sm:max-w-xl sm:mx-auto">
+        <div
+            class="absolute inset-0 bg-gradient-to-r from-blue-700 to-blue-900 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl">
+        </div>
+        <div class="text-white relative px-4 py-10 bg-blue-400 shadow-lg sm:rounded-3xl sm:p-20">
+
+            <div class="text-center pb-6">
+                <h1 class="text-3xl">Contact Us!</h1>
+
+                <p class="text-black-300">
+                    What's on your mind ?
+                </p>
+            </div>
+
+            <form>
+
+                <input
+                        class="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-black-700 leading-tight focus:outline-none focus:shadow-outline"
+                        type="text" placeholder="Name" name="name">
+
+                <input
+                        class="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-black-700 leading-tight focus:outline-none focus:shadow-outline"
+                        type="email" placeholder="Email" name="email">
+
+                <input
+                        class="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-black-700 leading-tight focus:outline-none focus:shadow-outline"
+                        type="text" placeholder="Subject" name="_subject">
+
+                <textarea
+                        class="shadow mb-4 min-h-0 appearance-none border rounded h-64 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        type="text" placeholder="Type your message here..." name="message" style="height: 121px;"></textarea>
+
+                <div class="flex justify-between">
+                    <input
+                        class="shadow bg-blue-900 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                        type="submit" value="Send ➤">
+                    <input
+                        class="shadow bg-red-900 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                        type="reset">
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>

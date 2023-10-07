@@ -16,7 +16,7 @@
 <nav class="flex flex-col md:flex-row justify-between px-6 md:px-10 py-6 w-full items-center">
     <div class="flex flex-row items-center justify-between w-full md:w-7/12">
         <div class="brand-logo mx-4 md:mx-0">
-            <img src="{{asset('public\images\logo.png')}}" alt="Your Logo" class="w-16 h-16">
+            <img src="{{asset('images/logo.png')}}" alt="Your Logo" class="w-16 h-16">
         </div>
         <div class="flex flex-row items-center space-x-4 md:space-x-8">
             <span class="text-lg font-bold px-2">
@@ -55,7 +55,7 @@
            
         </div>
         <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
-            <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png" alt="mockup">
+            <img src="{{asset('images/fish.jpeg')}}" alt="mockup" class="w-full rounded-xl">
         </div>                
     </div>
 </section>
@@ -104,8 +104,8 @@
             </a> 
         </div>
         <div class="grid grid-cols-2 gap-4 mt-8">
-            <img class="w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-2.png" alt="office content 1">
-            <img class="mt-4 w-full lg:mt-10 rounded-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-1.png" alt="office content 2">
+            <img class="w-full rounded-lg" src="{{asset('images/Jellyfish.jpeg')}}" alt="office content 1">
+            <img class="mt-4 w-full lg:mt-10 rounded-lg" src="{{asset('images/octopus.jpeg')}}" alt="office content 2">
         </div>
     </div>
 </section>
