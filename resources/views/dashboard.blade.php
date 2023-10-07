@@ -10,8 +10,8 @@
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900">
                     {{ __("You're logged in!") }}
-                </div>
             </div>
         </div>
+        <a href="{{ route('quiz.index') }}" class="mt-4 inline-block px-4 py-2 bg-black text-white rounded-lg hover:bg-blue-700">Go to Quiz</a>
     </div>
 </x-app-layout>
