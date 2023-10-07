@@ -34,6 +34,28 @@ Route::middleware('auth')->group(function () {
     Route::post('/quiz/submit', [QuizController::class, 'submit'])->name('quiz.submit');
 
 
+    // Routes for viewing the different items on the dashboard
+    Route::get('/maps.view', function () {
+        return view('maps');
+    })->name('maps.view');
+    Route::get('/water-bodies.view', function () {
+        return view('water-bodies');
+    })->name('water-bodies.view');
+    Route::get('/species.view', function () {
+        return view('species');
+    })->name('species.view');
+    Route::get('/settings.view', function () {
+        return view('settings');
+    })->name('settings.view');
+
+    Route::get('/test', function () {
+        return view('test');
+    })->name('test');
+    Route::get('/dashboard.view', function () {
+        return view('dashboard');
+    })->name('dashboard.view');
+
+
 });
 
 require __DIR__.'/auth.php';

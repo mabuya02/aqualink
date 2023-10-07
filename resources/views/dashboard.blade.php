@@ -1,3 +1,1 @@
-<x-dashboard>
-
-</x-dashboard>
+<x-dashboard />
