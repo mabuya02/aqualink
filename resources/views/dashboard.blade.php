@@ -96,7 +96,7 @@
                             Quiz
                         </h3>
                         <p>So you think you know?</p>
-                        <td><span class="Learn More"><a href="#">Learn More</a> </span></td>
+                        <td><span class="Learn More"><a href="{{ route('quiz.index') }}" class="mt-4 inline-block px-4 py-2 bg-black text-white rounded-lg hover:bg-blue-700">Learn More</a> </span></td>
                     </span>
                 </li>
             </ul>
