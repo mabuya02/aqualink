@@ -45,5 +45,27 @@
     @endif
 </nav>
 
+
+<figure class="max-w-lg">
+  <img class="h-auto max-w-full rounded-lg" src='\public\images\logo.png' alt="image description">
+  <figcaption class="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">Image caption</figcaption>
+</figure>
+
+<section class="bg-gray dark:bg-white-900">
+    <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+        <div class="mr-auto place-self-center lg:col-span-7">
+            <h3 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-gray">AquaLink ?</h1>
+            <p class="max-w-2xl mb-6 font-light text-white-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-600">
+            AquaLink is a dynamic online platform that serves as a vital hub for water enthusiasts, environmentalists, and concerned citizens alike. It goes beyond being just a website; it's a comprehensive resource designed to keep individuals informed about the health and well-being of water bodies. AquaLink acts as a beacon of awareness, notifying users about critical factors such as endangered species, fluctuations in water pH levels, and overall water purity.
+            <br>
+            At its core, AquaLink is a bridge between communities and the aquatic environments they hold dear. By delivering real-time updates and notifications, AquaLink empowers users to stay connected with the ever-changing dynamics of aquatic ecosystems. Whether you're a nature lover, educator, or someone deeply passionate about environmental conservation, AquaLink provides the tools and insights needed to make informed decisions.
+
+            More than just a repository of data, AquaLink strives to instill a profound connection with the liquid ecosystems that crisscross our planet. It's a call to action, urging individuals to play an active role in the preservation and protection of water resources. AquaLink envisions a future where every drop matters, and every informed action creates a ripple effect for a healthier, more sustainable world. Dive into AquaLink and discover the transformative power of water wisdom.</p>
+        </div>
+               
+    </div>
+</section>
+
+
 </body>
 </html>
