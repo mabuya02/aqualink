@@ -28,12 +28,19 @@
             <li><a href="{{ route('settings.view') }}"><i class='bx bx-cog'></i>Settings</a></li>
         </ul>
         <ul class="side-menu">
-            <li>
-                <a href="#" class="logout">
-                    <i class='bx bx-log-out-circle'></i>
-                    Logout
-                </a>
-            </li>
+        <a href="#" class="logout" id="logout-link">
+        <i class='bx bx-log-out-circle'></i>
+        Logout
+    </a>
+</li>
+
+<script>
+    document.getElementById('logout-link').addEventListener('click', function(e) {
+        e.preventDefault();
+       
+        window.location.href = '/welcome'; 
+    });
+</script>
         </ul>
     </div>
     <!-- End of Sidebar -->
