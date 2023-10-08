@@ -131,7 +131,7 @@
                         <thead>
                             <tr>
                                 <th>Water Body</th>
-                                <th>Temperature</th>
+                                <th>Water purity (%)</th>
                                 <th>Status</th>
                             </tr>
                         </thead>
@@ -141,25 +141,10 @@
                                     <img src="{{ asset('images/lake1.jpeg') }}">
                                     <p>Lake Naivasha</p>
                                 </td>
-                                <td>{{ $temperature ?? '88'}}</td>
+                                <td>{{ $purity ?? 'null'}}</td>
                                 <td><span class="status safe">Safe</span></td>
                             </tr>
-                            <tr>
-                                <td>
-                                    <img src="{{ asset('images/lake2.jpeg') }}">
-                                    <p>Indian Ocean</p>
-                                </td>
-                                <td>{{ $humidity ?? '77'}}</td>
-                                <td><span class="status critical">Critical</span></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="{{ asset('images/lake1.jpeg') }}">
-                                    <p>River Ewaso Nyiro</p>
-                                </td>
-                                <td>{{ $pH ?? '93'}}</td>
-                                <td><span class="status danger">Danger</span></td>
-                            </tr>
+
                         </tbody>
                     </table>
                 </div>

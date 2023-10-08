@@ -85,6 +85,23 @@
             color: red;
             font-weight: bold;
         }
+        a.back-to-dashboard {
+        display: inline-block;
+        margin-top: 20px; /* Adjust the margin as needed */
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+        margin-left: 20px;
+    }
+
+    a.back-to-dashboard:hover {
+        background-color: #0056b3;
+    }
+       
+
     </style>
 </head>
 <body>
@@ -128,9 +145,12 @@
             </div>
         @endforeach
 
-        <button type="submit">Finish</button>
+        
+    <button type="submit">Finish</button> 
+    <a href="{{ route('dashboard.view') }}" class="back-to-dashboard">Back to Dashboard</a>
 
-        <a href="{{ route('dashboard.view') }}">Back to Dashboard</a>
+
     </form>
+    
 </body>
 </html>
