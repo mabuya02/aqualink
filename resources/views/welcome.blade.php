@@ -99,7 +99,7 @@
             <p class="mb-4">Immerse yourself in the liquid world with AquaLink's intuitive notifications, providing you with crucial insights into the delicate balance of our water ecosystems. From the mesmerizing depths of underwater life to the intricacies of water purity, AquaLink is your guide to understanding, appreciating, and preserving the wonders that flow beneath the surface.</p>
             <p>Join us in the journey towards water wisdom. AquaLink: Connecting communities, protecting water, and fostering a future where every drop contributes to the vitality of our planet. Together, let's make waves of change!</p>
             <br>
-            <a href="#" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-white-200 focus:ring-4 focus:ring-gray-100 dark:text-gray dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+            <a href="{{ route('register') }}" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-white-200 focus:ring-4 focus:ring-gray-100 dark:text-gray dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
                 Sign Up
             </a> 
         </div>

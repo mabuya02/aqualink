@@ -50,9 +50,10 @@
     <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
         <div class="font-light text-white-500 sm:text-lg dark:text-white-400">
             <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-white-900 dark:text-gray">What is AquaLink ?</h2>
-            <p class="mb-4">AquaLink is a dynamic online platform that serves as a vital hub for water enthusiasts, environmentalists, and concerned citizens alike. It goes beyond being just a website; it's a comprehensive resource designed to keep individuals informed about the health and well-being of water bodies. AquaLink acts as a beacon of awareness, notifying users about critical factors such as endangered species, fluctuations in water pH levels, and overall water purity.
-            <br>
+            <p class="mb-4">AquaLink is a dynamic online platform that serves as a vital hub for water enthusiasts, environmentalists, and concerned citizens alike. It goes beyond being just a website; it's a comprehensive resource designed to keep individuals informed about the health and well-being of water bodies. AquaLink acts as a beacon of awareness, notifying users about critical factors such as endangered species, fluctuations in water pH levels, and overall water purity.</p>
+            <p>
             At its core, AquaLink is a bridge between communities and the aquatic environments they hold dear. By delivering real-time updates and notifications, AquaLink empowers users to stay connected with the ever-changing dynamics of aquatic ecosystems. Whether you're a nature lover, educator, or someone deeply passionate about environmental conservation, AquaLink provides the tools and insights needed to make informed decisions.</p>
+            <br>
             <p>Join us in the journey towards water wisdom. AquaLink: Connecting communities, protecting water, and fostering a future where every drop contributes to the vitality of our planet. Together, let's make waves of change!</p>
             <br>
             <p> More than just a repository of data, AquaLink strives to instill a profound connection with the liquid ecosystems that crisscross our planet. It's a call to action, urging individuals to play an active role in the preservation and protection of water resources. AquaLink envisions a future where every drop matters, and every informed action creates a ripple effect for a healthier, more sustainable world. Dive into AquaLink and discover the transformative power of water wisdom.</p>
@@ -65,21 +66,26 @@
 </section>
 
 <section class="bg-gray dark:bg-white-900">
-    <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-        <div class="mr-auto place-self-center lg:col-span-7">
-            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-white-900 dark:text-gray">What else ?</h2>
-            <p class="max-w-2xl mb-6 font-light text-white-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-600">
+    <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+        <div class="font-light text-white-500 sm:text-lg dark:text-white-400">
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-white-900 dark:text-gray">What Else ?</h2>
+            <p>
             Embark on a journey of exploration with AquaLink, where each click unveils a deeper understanding of our planet's aquatic realms. Delve into the intricate web of biodiversity as AquaLink sheds light on endangered species dwelling in the waters. Feel the pulse of the environment through real-time updates on changing water pH, purity levels, and environmental conditions. </p>
             <br>
-            <p class="max-w-2xl mb-6 font-light text-white-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-600">
+            <p>
             AquaLink isn't just about information; it's a catalyst for change. Join a community of like-minded individuals who share a commitment to safeguarding our water bodies. Participate in conservation efforts, learn about sustainable practices, and contribute to the collective knowledge that fuels AquaLink's mission. </p>
             <br>
             
-            <p class="max-w-2xl mb-6 font-light text-white-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-600">
+            <p>
             Navigate effortlessly through AquaLink's user-friendly interface, designed to adapt seamlessly to any device or screen size. Whether you're on a desktop, tablet, or mobile phone, AquaLink ensures a consistent and engaging experience, making water awareness accessible to all. </p>
             <br>
-            <p class="max-w-2xl mb-6 font-light text-white-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-600">
+            <p>
             In a world where water is a finite resource, AquaLink stands as a beacon of hope and education. As you explore the wonders of aquatic ecosystems, let AquaLink be your guide—a digital companion on the journey to a more water-conscious and ecologically harmonious future. Together, let's make waves of positive change with AquaLink. </p>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mt-8">
+        <img class="mt-4 w-full lg:mt-10 rounded-lg" src="{{asset('images/turtle.jpeg')}}" alt="office content 2">
+            <img class="w-full rounded-lg" src="{{asset('images/stingray.jpeg')}}" alt="office content 1">
+            
         </div>
                
     </div>
