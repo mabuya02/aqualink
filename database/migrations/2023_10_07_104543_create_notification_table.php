@@ -21,37 +21,6 @@ return new class extends Migration
            
             // $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
-        DB::table('notification')->insert([
-            'message' => 'Welcome to AquaLink!',
-            'is_read' => false,
-            'created_at' => now(),
-            'updated_at' => now(),
-        ]);
-
-        DB::table('notification')->insert([
-            'message' => 'The water purity at Lake Victoria has drastically decreased. be carefull when swimming there.',
-            'is_read' => false,
-            'created_at' => now(),
-            'updated_at' => now(),
-        ]);
-        DB::table('notification')->insert([
-            'message' => 'There has been a new species of fish discovered in Lake Victoria. Its called the Nile Perch.',
-            'is_read' => false,
-            'created_at' => now(),
-            'updated_at' => now(),
-        ]);
-        DB::table('notification')->insert([
-            'message' => 'Do you know that there are 4 types of endagered species in Lake Victoria?',
-            'is_read' => false,
-            'created_at' => now(),
-            'updated_at' => now(),
-        ]);
-        DB::table('notification')->insert([
-            'message' => 'There has been a new species of fish discovered in Lake Victoria. Its called the Nile Perch.',
-            'is_read' => false,
-            'created_at' => now(),
-            'updated_at' => now(),
-        ]);
     }
 
     /**

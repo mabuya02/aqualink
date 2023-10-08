@@ -31,6 +31,21 @@
                 <span class="ml-2 text-sm text-gray-600">{{ __('Remember me') }}</span>
             </label>
         </div>
+        <x-primary-button class="ml-7">
+                {{ __('Log in') }}
+            </x-primary-button>
+
+        <div class="flex items-center justify-between mt-4">
+            <div>
+                @if (Route::has('register'))
+                    <p class="text-sm text-gray-600">
+                       
+                        <a class="underline text-indigo-600 hover:text-indigo-900" href="{{ route('register') }}">
+                            {{ __('Don\'t have an account? ') }}
+                        </a>
+                    </p>
+                @endif
+            </div>
 
         <div class="flex items-center justify-end mt-4">
             @if (Route::has('password.request'))
@@ -39,9 +54,9 @@
                 </a>
             @endif
 
-            <x-primary-button class="ml-3">
+            <!-- <x-primary-button class="ml-3">
                 {{ __('Log in') }}
-            </x-primary-button>
+            </x-primary-button> -->
         </div>
     </form>
 </x-guest-layout>

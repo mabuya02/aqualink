@@ -15,7 +15,7 @@
 
     <!-- Sidebar -->
     <div class="sidebar">
-        <a href="{{ asset('images/logo.png') }}" class="logo">
+    <a href="{{ route('dashboard') }}" class="logo">
             <i class='bx bx-code-alt'></i>
             <div class="logo-name"><span>Aqua</span>link</div>
         </a>
@@ -29,10 +29,21 @@
         </ul>
         <ul class="side-menu">
             <li>
-                <a href="{{ route('logout') }}" class="logout">
-                    <i class='bx bx-log-out-circle'></i>
-                    Logout
-                </a>
+            <li>
+    <a href="#" class="logout" id="logout-link">
+        <i class='bx bx-log-out-circle'></i>
+        Logout
+    </a>
+</li>
+
+<script>
+    document.getElementById('logout-link').addEventListener('click', function(e) {
+        e.preventDefault();
+       
+        window.location.href = '/welcome'; 
+    });
+</script>
+
             </li>
         </ul>
     </div>
