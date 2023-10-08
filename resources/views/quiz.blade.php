@@ -100,20 +100,24 @@
                 </p>
                 <div class="answers">
                     <label>
-                        <input type="checkbox" name="answers[{{ $key }}][]" value="A">
                         <span class="choices">A</span> {{ $question['A'] }}
+                        <input type="checkbox" name="answers[{{ $key }}][]" value="A">
+                       
                     </label>
                     <label>
-                        <input type="radio" name="answers[{{ $key }}]" value="B">
                         <span class="choices">B</span> {{ $question['B'] }}
+                        <input type="checkbox" name="answers[{{ $key }}]" value="B">
+                        
                     </label>
                     <label>
-                        <input type="radio" name="answers[{{ $key }}]" value="C">
                         <span class="choices">C</span> {{ $question['C'] }}
+                        <input type="checkbox" name="answers[{{ $key }}]" value="C">
+                        
                     </label>
                     <label>
-                        <input type="radio" name="answers[{{ $key }}]" value="D">
-                        <span class="choices">D</span> {{ $question['D'] }}
+                    <span class="choices">D</span> {{ $question['D'] }}
+                        <input type="checkbox" name="answers[{{ $key }}]" value="D">
+                        
                     </label>
                 </div>
                 @if(isset($results[$key]) && $results[$key]['correct'])
@@ -125,6 +129,8 @@
         @endforeach
 
         <button type="submit">Finish</button>
+
+        <a href="{{ route('dashboard.view') }}">Back to Dashboard</a>
     </form>
 </body>
 </html>
