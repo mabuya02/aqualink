@@ -131,7 +131,7 @@
                         <thead>
                             <tr>
                                 <th>Water Body</th>
-                                <th>Temperature</th>
+                                <th>Water purity (%)</th>
                                 <th>Status</th>
                             </tr>
                         </thead>
