@@ -52,6 +52,19 @@ return new class extends Migration
             'created_at' => now(),
             'updated_at' => now(),
         ]);
+        DB::table('notification')->insert([
+            'message' => 'Protect aquatic species :Limit Chemical Use: Minimize the use of pesticides and fertilizers in gardens to prevent runoff into water bodies',
+            'is_read' => false,
+            'created_at' => now(),
+            'updated_at' => now(),
+        ]);
+        DB::table('notification')->insert([
+            'message' => 'Share Your Conservation Story!
+            Have a success story or a tip for protecting aquatic species? Share it with our community in the app and inspire others!',
+            'is_read' => false,
+            'created_at' => now(),
+            'updated_at' => now(),
+        ]);
     }
 
     /**

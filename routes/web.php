@@ -59,14 +59,14 @@ Route::middleware('auth')->group(function () {
     Route::get('/test', function () {
         return view('test');
     })->name('test');
-    Route::get('/dashboard.view', function () {
-        return view('dashboard');
-    })->name('dashboard.view');
+    // Route::get('/dashboard.view', function () {
+    //     return view('dashboard');
+    // })->name('dashboard.view');
     Route::get('/dashboard.view', 'App\Http\Controllers\SensorController@index')->name('dashboard.view');
 
     // Load the notifications from the db when getting to dashboard
     Route::get('/dashboard', 'App\Http\Controllers\NotificationController@index')->name('dashboard');
-    Route::get('/', 'App\Http\Controllers\SensorController@index')->name('/');
+    // Route::get('/', 'App\Http\Controllers\SensorController@index')->name('/');
 
     //Route to the welcome landing page
     Route::get('/welcome', function () {

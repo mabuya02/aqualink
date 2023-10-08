@@ -25,12 +25,14 @@ class SensorController extends Controller
         $purity = $feeds[0]->field4 ?? null;
 
         // Send the extracted data to the view
-        return view('dashboard', [
+        return view('components.dashboard', 
+        [
             'temperature' => $temperature,
             'humidity' => $humidity,
             'ph' => $ph,
             'purity' => $purity,
-        ]);
+        ]
+    );
     }
 
     /**
