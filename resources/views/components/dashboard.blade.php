@@ -21,7 +21,7 @@
         </a>
         <ul class="side-menu">
             <li class="active"><a href="#"><i class='bx bxs-dashboard'></i>Dashboard</a></li>
-            <li><a href="{{ route('/') }}"><i class='bx bx-message-square-dots'></i>Homepage</a></li>
+            <li><a href="{{ route('welcome') }}"><i class='bx bx-message-square-dots'></i>Homepage</a></li>
             <li><a href="{{ route('water-bodies.view') }}"><i class='bx bx-water'></i>Water Bodies</a></li>
             <li ><a href="{{ route('maps.view') }}"><i class='bx bx-map'></i>Map</a></li>
             <li ><a href="{{ route('species.view') }}"><i class='bx bx-map'></i>Species</a></li>
@@ -29,7 +29,7 @@
         </ul>
         <ul class="side-menu">
             <li>
-                <a href="#" class="logout">
+                <a href="{{ route('logout') }}" class="logout">
                     <i class='bx bx-log-out-circle'></i>
                     Logout
                 </a>
@@ -64,7 +64,7 @@
         <main>
             <div class="header">
                 <div class="left">
-                    <h1>Hello John</h1>
+                    <h1>Hello {{auth()->user()->name }}!</h1>
                     <ul class="breadcrumb">
                         <li><a href="/">
                                 Homepage
@@ -96,7 +96,7 @@
                             Quiz
                         </h3>
                         <p>So you think you know?</p>
-                        <td><span class="Learn More"><a href="Quiz.html">Learn More</a> </span></td>
+                        <td><span class="Learn More"><a href="{{ route('quiz.index') }}">Learn More</a> </span></td>
                     </span>
                 </li>
             </ul>
@@ -113,7 +113,7 @@
                         <thead>
                             <tr>
                                 <th>Water Body</th>
-                                <th>Purity</th>
+                                <th>Temperature</th>
                                 <th>Status</th>
                             </tr>
                         </thead>
@@ -123,7 +123,7 @@
                                     <img src="{{ asset('images/lake1.jpeg') }}">
                                     <p>Lake Naivasha</p>
                                 </td>
-                                <td>88%</td>
+                                <td>{{ $temperature ?? '88'}}</td>
                                 <td><span class="status safe">Safe</span></td>
                             </tr>
                             <tr>
@@ -131,7 +131,7 @@
                                     <img src="{{ asset('images/lake2.jpeg') }}">
                                     <p>Indian Ocean</p>
                                 </td>
-                                <td>55%</td>
+                                <td>{{ $humidity ?? '77'}}</td>
                                 <td><span class="status critical">Critical</span></td>
                             </tr>
                             <tr>
@@ -139,7 +139,7 @@
                                     <img src="{{ asset('images/lake1.jpeg') }}">
                                     <p>River Ewaso Nyiro</p>
                                 </td>
-                                <td>22%</td>
+                                <td>{{ $pH ?? '93'}}</td>
                                 <td><span class="status danger">Danger</span></td>
                             </tr>
                         </tbody>
