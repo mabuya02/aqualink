@@ -67,7 +67,7 @@
               <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
               </div>
               <h3 class="mb-2 text-xl font-bold dark:text-white">Temperature</h3>
-              <p class="text-gray-500 dark:text-gray-400">emperature is a critical factor in determining the health of water bodies. AquaLink provides real-time information on water temperature, helping users understand the environmental conditions that aquatic species are exposed to. Fluctuations in temperature can impact the metabolic rates of aquatic organisms and influence the overall ecosystem dynamics. AquaLink's temperature monitoring feature aids in tracking these changes, offering valuable insights into the well-being of the aquatic environment.</p>
+              <p class="text-gray-500 dark:text-gray-400">Temperature is a critical factor in determining the health of water bodies. AquaLink provides real-time information on water temperature, helping users understand the environmental conditions that aquatic species are exposed to. Fluctuations in temperature can impact the metabolic rates of aquatic organisms and influence the overall ecosystem dynamics. AquaLink's temperature monitoring feature aids in tracking these changes, offering valuable insights into the well-being of the aquatic environment.</p>
           </div>
           <div>
               <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">

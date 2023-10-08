@@ -4,19 +4,32 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class Notification extends Controller
+class SensorController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        // get notifications from the notifications table
-        $notifications = Notification::all();
+        $api = 'https://api.thingspeak.com/channels/2295228/feeds.json?api_key=OENBFV3SVQKQBRQ4&results=1';
+        $json_data = file_get_contents($api);
 
-        // Send them to the view
+        $sensorData = json_decode($json_data);
+        $channel = $sensorData->channel;
+        $feeds = $sensorData->feeds;
+
+        // Extract values from the feeds array
+        $temperature = $feeds[0]->field1 ?? null;
+        $humidity = $feeds[0]->field2 ?? null;
+        $ph = $feeds[0]->field3 ?? null;
+        $purity = $feeds[0]->field4 ?? null;
+
+        // Send the extracted data to the view
         return view('dashboard', [
-            'notifications' => $notifications,
+            'temperature' => $temperature,
+            'humidity' => $humidity,
+            'ph' => $ph,
+            'purity' => $purity,
         ]);
     }
 
