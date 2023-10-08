@@ -91,7 +91,7 @@
             <ul class="insights">
                 
                 <li>
-                    <img src="{{ ('images/lake1.jpeg') }}" alt="h3" width="300" height="170">
+                    <img src="{{ ('images/tree.jpg') }}" alt="h3" width="300" height="170">
                     <span class="info">
                         <h3>
                             Fun Facts
