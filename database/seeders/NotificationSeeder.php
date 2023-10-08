@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Seeder;
 
 class NotificationSeeder extends Seeder
@@ -12,8 +12,23 @@ class NotificationSeeder extends Seeder
      */
     public function run(): void
     {
-        Notification::factory(7)->create([
-            'user_id' => 1, // Replace with the user ID to associate notifications with.
-        ]); 
+
+        $notifications = [
+            [
+                'message' => 'This is the first notification.',
+                'is_read' => false,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'message' => 'This is the second notification.',
+                'is_read' => true,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ]
+            ];
+
+            DB::table('notification')->insert($notifications);
+
     }
 }

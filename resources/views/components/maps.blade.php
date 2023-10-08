@@ -71,7 +71,7 @@
         <!-- End of Navbar -->
 
         <!-- <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1jgFxX92bbHP8Jj0ho1WRqsvxeuIKMVA&ehbc=2E312F" ></iframe> -->
-            <iframe src="https://gspace.maps.arcgis.com/apps/dashboards/f6649c114a7949d5a87d4f8a8f8cbfef"width="1250" height="800"></iframe>
+            <iframe src="https://gspace.maps.arcgis.com/apps/dashboards/f6649c114a7949d5a87d4f8a8f8cbfef"width="1250" height="750"></iframe>
 
         </main>
 
