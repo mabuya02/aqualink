@@ -32,7 +32,7 @@
     </div>
     <div class="flex flex-row mt-4 md:mt-0 w-full md:w-1/5 items-center justify-around">
     @auth
-        <a href="{{ url('/dashboard') }}" class="font-semibold text-black-600 hover:text-black-900 dark:text-black-400 dark:hover:text-gray focus:outline focus:outline-2 focus:rounded-sm focus:outline-gray-500">Dashboard</a>
+        <a href="{{ route('dashboard.view') }}" class="font-semibold text-black-600 hover:text-black-900 dark:text-black-400 dark:hover:text-gray focus:outline focus:outline-2 focus:rounded-sm focus:outline-gray-500">Dashboard</a>
         <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="font-semibold text-black-600 hover:text-black-900 dark:text-black-400 dark:hover:text-gray focus:outline focus:outline-2 focus:rounded-sm focus:outline-gray-500">Logout</a>
         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
             @csrf
