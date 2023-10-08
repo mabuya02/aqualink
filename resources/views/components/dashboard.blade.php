@@ -91,7 +91,7 @@
             <ul class="insights">
                 
                 <li>
-                    <img src="{{ ('images/tree.jpg') }}" alt="h3" width="300" height="170">
+                    <img src="{{ ('images/fun.png') }}" alt="h3" width="300" height="170">
                     <span class="info">
                         <h3>
                             Fun Facts
@@ -101,7 +101,7 @@
                     </span>
                 </li>
                 <li>
-                    <img src="{{ asset('images/lake1.jpeg') }}" alt="h3" width="300" height="170">
+                    <img src="{{ asset('images/quiz2.png') }}" alt="h3" width="300" height="170">
                     <span class="info">
                         <h3>
                             Quiz

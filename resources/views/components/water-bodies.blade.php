@@ -26,9 +26,10 @@
             <li ><a href="{{ route('maps.view') }}"><i class='bx bx-map'></i>Map</a></li>
             <li ><a href="{{ route('species.view') }}"><i class='bx bx-map'></i>Species</a></li>
             <li><a href="{{ route('settings.view') }}"><i class='bx bx-cog'></i>Settings</a></li>
-        </ul>
-        <ul class="side-menu">
-        <a href="#" class="logout" id="logout-link">
+            <ul class="side-menu">
+            <li>
+            <li>
+    <a href="#" class="logout" id="logout-link">
         <i class='bx bx-log-out-circle'></i>
         Logout
     </a>
@@ -41,6 +42,8 @@
         window.location.href = '/welcome'; 
     });
 </script>
+
+            </li>
         </ul>
     </div>
     <!-- End of Sidebar -->
