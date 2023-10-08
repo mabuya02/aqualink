@@ -62,6 +62,13 @@ Route::middleware('auth')->group(function () {
         return view('dashboard');
     })->name('dashboard.view');
 
+    // Load the notifications from the db when getting to dashboard
+    Route::get('/dashboard', 'App\Http\Controllers\NotificationController@index')->name('dashboard');
+
+    //Route to the welcome landing page
+    Route::get('/', function () {
+        return view('welcome');
+    })->name('welcome');
 
 });
 

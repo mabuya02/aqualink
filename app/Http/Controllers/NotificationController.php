@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class Notification extends Controller
+class NotificationController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -12,7 +12,7 @@ class Notification extends Controller
     public function index()
     {
         // get notifications from the notifications table
-        $notifications = Notification::all();
+        $notifications = \App\Models\NotificationEntry::all();
 
         // Send them to the view
         return view('dashboard', [

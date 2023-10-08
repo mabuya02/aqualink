@@ -1,1 +1,1 @@
-<x-dashboard  :notifications="$notifications"/>
+<x-dashboard />
